@@ -1,0 +1,80 @@
+{
+ "genome": {
+  "records": 860,
+  "cells_with_any_pct": 7.4,
+  "share_of_all_records_pct": 0.3,
+  "basisOfRecord": {
+   "PRESERVED_SPECIMEN": 174,
+   "MATERIAL_SAMPLE": 686
+  },
+  "provenance": {
+   "source": "GBIF occurrence search API",
+   "api": "https://api.gbif.org/v1/occurrence/search",
+   "params": {
+    "geometry": "POLYGON((-67.550000 -15.550000,-64.450000 -15.550000,-64.450000 -12.450000,-67.550000 -12.450000,-67.550000 -15.550000))",
+    "hasCoordinate": "true",
+    "checklistKey": "7ddf754f-d193-4cc9-b351-99906754a03b",
+    "isSequenced": "true"
+   },
+   "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+   "matched_in_query_polygon": 911,
+   "kept_in_region": 860,
+   "retrieved_at": "2026-09-26T06:56:15+00:00",
+   "producer": "healpix-connector 0.0.1"
+  }
+ },
+ "one_health_host": {
+  "taxon": {
+   "query": "Calomys callosus",
+   "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+   "taxon_key": "PYL2",
+   "name": "Calomys callosus (Rengger, 1830)",
+   "rank": "SPECIES",
+   "match_type": "EXACT"
+  },
+  "records": 1583,
+  "cells_with_any_pct": 1.0,
+  "top_cell_share_pct": 99.3,
+  "provenance": {
+   "source": "GBIF occurrence search API",
+   "api": "https://api.gbif.org/v1/occurrence/search",
+   "params": {
+    "geometry": "POLYGON((-67.550000 -15.550000,-64.450000 -15.550000,-64.450000 -12.450000,-67.550000 -12.450000,-67.550000 -15.550000))",
+    "hasCoordinate": "true",
+    "checklistKey": "7ddf754f-d193-4cc9-b351-99906754a03b",
+    "taxonKey": "PYL2"
+   },
+   "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+   "matched_in_query_polygon": 1614,
+   "kept_in_region": 1583,
+   "retrieved_at": "2026-09-26T06:56:18+00:00",
+   "producer": "healpix-connector 0.0.1"
+  }
+ },
+ "environment": {
+  "source": {
+   "name": "CHELSA v2.1 climatologies",
+   "doi": "10.16904/envidat.228",
+   "license": "CC0-1.0",
+   "version": "2.1",
+   "reference_period": [
+    "1981-01-01",
+    "2010-12-31"
+   ],
+   "url_template": "https://os.zhdk.cloud.switch.ch/chelsav2/GLOBAL/climatologies/1981-2010/bio/CHELSA_bio{n}_1981-2010_V.2.1.tif"
+  },
+  "bio1_range_degC": [
+   20.145982956638537,
+   26.298694087429787
+  ],
+  "bio12_range_mm": [
+   1567.7674224446528,
+   2585.6231891462144
+  ]
+ },
+ "ecosystem": {
+  "cells_well_observed_by_biomass": 427,
+  "of": 610
+ },
+ "all_four_layers_cells": 0
+}

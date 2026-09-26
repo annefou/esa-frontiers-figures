@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "esa-frontiers-figures: code and data behind the figures of 'Rethinking Interoperability for AI-Driven Earth Intelligence' (ESA Frontiers of Science, 30 Sep 2026)"
+message: "If you reuse these figures or scripts, please cite this repository and the data sources listed in DATA_LICENSES.md."
+type: software
+authors:
+  - family-names: "Fouilloux"
+    given-names: "Anne"
+    orcid: "https://orcid.org/0000-0002-1784-2920"
+    affiliation: "LifeWatch ERIC"
+license: MIT
+version: "0.1.0"
+date-released: "2026-09-26"
+keywords: [reproducibility, FORRT, HEALPix, DGGS, GBIF, ESA, BIOMASS, CCI, biodiversity, AI-ready]
+references:
+  - type: software
+    title: "healpix-connector"
+    repository-code: "https://github.com/annefou/healpix-connector"
+  - type: dataset
+    title: "European coastal biodiversity replication: input data slices"
+    doi: "10.5281/zenodo.20465505"

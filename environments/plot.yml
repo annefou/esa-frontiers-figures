@@ -1,0 +1,18 @@
+# Plotting + light analysis (fig03, fig09, fig12, all Beni plot_*.py). Versions = the env the figures were made in.
+name: esa-frontiers-plot
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - numpy=2.5
+  - matplotlib=3.11
+  - shapely=2.1
+  - pyshp=3.1
+  - pandas=3.0
+  - pyarrow
+  - xarray=2026.7
+  - netcdf4
+  - requests
+  - pip
+  - pip:
+      - healpix-geo==0.4.1
+      - mapbox-vector-tile==2.2.0

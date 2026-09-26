@@ -1,0 +1,47 @@
+{
+ "biomass_fh": {
+  "product": "BIOMASS L2A FP_FH__L2A forest height [m], BPS-Biomass L2a processor 4.4.4, 200 m",
+  "n_products_used": 16,
+  "excluded_by_quality_rule": [
+   {
+    "product": "bio_fp_fh__l2a_20260725t222820_20260806t222849_t_g01_m04_c___t014_f166_i_fh.tiff",
+    "median_quality": 0.13
+   },
+   {
+    "product": "bio_fp_fh__l2a_20260725t222858_20260806t222927_t_g01_m04_c___t014_f168_i_fh.tiff",
+    "median_quality": 0.0
+   }
+  ],
+  "quality_rule": "drop product if median quality < 1.0",
+  "acquisition_dates": [
+   "20260426",
+   "20260517",
+   "20260607",
+   "20260707",
+   "20260728",
+   "20260818"
+  ],
+  "source": "ESA MAAP, collection BiomassLevel2a",
+  "fine_depth": 12,
+  "fine_cell_km": 1.59,
+  "n_fine_cells": 29986,
+  "fh_median_m": 8.663276974996588,
+  "fh_p90_m": 20.39620956449177,
+  "median_acquisitions_per_cell": 1.0,
+  "quality_median": 12.71458445477596
+ },
+ "join_depth9": {
+  "coarse_cells_well_observed": 427,
+  "of": 610,
+  "spearman_fh_vs_cci_agb": 0.467,
+  "spearman_fh_vs_gbif_count": -0.046,
+  "area_share_fh_ge_15m": 0.159,
+  "record_share_fh_ge_15m": 0.113
+ },
+ "mammals_on_fine_grid": {
+  "records_in_observed_cells": 6377,
+  "of": 7736,
+  "fine_cells_with_mammal_records": 426,
+  "fine_cells_with_mammal_records_pct": 1.42
+ }
+}

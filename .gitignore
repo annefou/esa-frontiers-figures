@@ -1,0 +1,20 @@
+# credentials — never commit
+.maap_token
+*.token
+.env
+.copernicusmarine/
+# large / re-downloadable raw data
+*.nc
+*.tif
+*.tiff
+*.zip
+beni-pipeline/data/
+beni-pipeline/biomass_fh/
+beni-pipeline/results/mammals.json
+beni-pipeline/results/threatened_records.json
+fig03-global-sampling-mismatch/external/
+fig03-global-sampling-mismatch/data/cells_d4.npz
+fig09-coastal-storm-product-choice/data/
+*/upstream/
+__pycache__/
+.pixi/

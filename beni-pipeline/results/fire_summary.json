@@ -1,0 +1,25 @@
+{
+ "dataset": "ESA Fire_cci SYN burned area pixel v1.1 (Sentinel-3 OLCI+SLSTR, 300 m), 2024",
+ "doi": "10.5285/d441079fc77f49fabeb41330612b252f",
+ "burned_share_of_observed_burnable_pct": 20.2,
+ "never_observed_pct": 4.09,
+ "unburnable_pct": 3.2,
+ "burned_pixels_by_month": {
+  "1": 766,
+  "2": 172,
+  "3": 193,
+  "4": 398,
+  "5": 4827,
+  "6": 9848,
+  "7": 29652,
+  "8": 59658,
+  "9": 64548,
+  "10": 52172,
+  "11": 3539,
+  "12": 997
+ },
+ "cells9_with_any_burn_pct": 88.0,
+ "cells9_burned_over_25pct": 195,
+ "mean_confidence_of_burned_pixels": 87.5,
+ "pixels": 1166400
+}

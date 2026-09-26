@@ -1,0 +1,24 @@
+{
+ "cells_considered": 427,
+ "predictors": [
+  "BIOMASS forest height",
+  "CCI AGB",
+  "CHELSA bio1",
+  "CHELSA bio12"
+ ],
+ "all_taxa": {
+  "sampled_cells": 338,
+  "threshold": 0.261,
+  "outside_aoa_pct": 1.4
+ },
+ "mammals": {
+  "sampled_cells": 139,
+  "threshold": 0.304,
+  "outside_aoa_pct": 7.5
+ },
+ "dna_sequenced": {
+  "sampled_cells": 23,
+  "threshold": 0.46,
+  "outside_aoa_pct": 9.4
+ }
+}

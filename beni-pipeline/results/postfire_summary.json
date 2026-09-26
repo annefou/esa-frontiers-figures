@@ -1,0 +1,9 @@
+{
+ "since": "2024-10-01,2026-09-30",
+ "records_since": 27394,
+ "cells_with_any_record_since_pct": 23.8,
+ "heavily_burned_cells": 195,
+ "heavily_burned_without_record_since": 166,
+ "heavily_burned_without_record_since_pct": 85.1,
+ "heavily_burned_with_records_before_but_none_since": 108
+}

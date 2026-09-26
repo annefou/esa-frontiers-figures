@@ -1,0 +1,77 @@
+{
+ "depth": 11,
+ "n_cells": 10344,
+ "spearman_agb_vs_burned": -0.287,
+ "spearman_rain_vs_burned": -0.315,
+ "spearman_rain_vs_agb": 0.471,
+ "by_agb_class": [
+  {
+   "agb_class": "<10",
+   "n_cells": 3021,
+   "mean_burned_pct": 32.1,
+   "share_cells_burned_over_25pct": 43.7
+  },
+  {
+   "agb_class": "10\u201325",
+   "n_cells": 1956,
+   "mean_burned_pct": 27.3,
+   "share_cells_burned_over_25pct": 38.6
+  },
+  {
+   "agb_class": "25\u201350",
+   "n_cells": 1769,
+   "mean_burned_pct": 19.7,
+   "share_cells_burned_over_25pct": 28.9
+  },
+  {
+   "agb_class": "50\u2013100",
+   "n_cells": 1353,
+   "mean_burned_pct": 13.6,
+   "share_cells_burned_over_25pct": 20.6
+  },
+  {
+   "agb_class": "100\u2013150",
+   "n_cells": 923,
+   "mean_burned_pct": 5.6,
+   "share_cells_burned_over_25pct": 7.8
+  },
+  {
+   "agb_class": "\u2265150",
+   "n_cells": 1322,
+   "mean_burned_pct": 1.4,
+   "share_cells_burned_over_25pct": 1.7
+  }
+ ],
+ "by_rain_tercile": {
+  "drier third": {
+   "n": 3441,
+   "mean_burned_pct": 32.2,
+   "range_mm": [
+    1538,
+    1824
+   ]
+  },
+  "middle third": {
+   "n": 3455,
+   "mean_burned_pct": 17.6,
+   "range_mm": [
+    1825,
+    1944
+   ]
+  },
+  "wetter third": {
+   "n": 3448,
+   "mean_burned_pct": 11.3,
+   "range_mm": [
+    1944,
+    2867
+   ]
+  }
+ },
+ "rain_support": "value of the source grid box containing the cell centre (~1 km)",
+ "sources": {
+  "agb": "ESA CCI Biomass v7.0 2023 (doi:10.5285/6429d1aafe1e43b9b414e4a5a7f8b903)",
+  "fire": "ESA Fire_cci SYN v1.1 2024 (doi:10.5285/d441079fc77f49fabeb41330612b252f)",
+  "rain": "CHELSA v2.1 bio12 1981-2010 (doi:10.16904/envidat.228)"
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "region": {
+  "name": "Beni lowlands, Bolivia",
+  "bbox_lonlat": [
+   -67.5,
+   -15.5,
+   -64.5,
+   -12.5
+  ]
+ },
+ "grid": {
+  "dggs": "HEALPix NESTED",
+  "ellipsoid": "WGS84",
+  "depth": 9,
+  "cell_width_km": 12.73,
+  "n_cells": 610
+ },
+ "biomass": {
+  "source": "ESA CCI Biomass v7.0, AGB 2023, 100 m",
+  "citation": "Santoro, M.; Cartus, O. (2026): ESA Biomass Climate Change Initiative (Biomass_cci): Global datasets of forest above-ground biomass for the years 2005-2012 and 2015-2024, v7.0. NERC EDS CEDA. doi:10.5285/6429d1aafe1e43b9b414e4a5a7f8b903",
+  "units": "Mg/ha",
+  "cell_mean_median": 27.572554314018635,
+  "cell_mean_p10_p90": [
+   4.923875519669446,
+   151.9191079951096
+  ],
+  "median_within_cell_std": 33.64879677757155,
+  "median_product_sd": 11.609278599937387,
+  "median_rel_sd": 0.42799191727688995
+ },
+ "gbif_all_taxa": {
+  "total_records_in_cells": 282372,
+  "cells_with_records_pct": 77.2,
+  "cells_without_records": 139,
+  "top5pct_cells_share_of_records_pct": 76.5,
+  "median_agb_all_cells": 27.572554314018635,
+  "median_agb_sampled_cells": 29.308779935826838,
+  "median_agb_unsampled_cells": 23.813825752682657,
+  "record_weighted_median_agb": 20.272608187848498,
+  "spearman_agb_vs_count": -0.01,
+  "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+  "retrieved_at": "2026-09-25T21:13:34+00:00",
+  "method": "occurrence/search count per exact WGS84 HEALPix cell polygon"
+ },
+ "gbif_mammals": {
+  "taxon": {
+   "query": "Mammalia",
+   "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+   "taxon_key": "6224G",
+   "name": "Mammalia Linnaeus, 1758",
+   "rank": "CLASS",
+   "match_type": "EXACT"
+  },
+  "provenance": {
+   "source": "GBIF occurrence search API",
+   "api": "https://api.gbif.org/v1/occurrence/search",
+   "params": {
+    "geometry": "POLYGON((-67.550000 -15.550000,-64.450000 -15.550000,-64.450000 -12.450000,-67.550000 -12.450000,-67.550000 -15.550000))",
+    "hasCoordinate": "true",
+    "checklistKey": "7ddf754f-d193-4cc9-b351-99906754a03b",
+    "taxonKey": "6224G"
+   },
+   "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+   "matched_in_query_polygon": 8067,
+   "kept_in_region": 7736,
+   "retrieved_at": "2026-09-25T21:13:56+00:00",
+   "producer": "healpix-connector 0.0.1"
+  },
+  "n_records": 7736,
+  "cells_with_mammal_records_pct": 31.0,
+  "uncertainty_stated_pct": 81.2,
+  "median_uncertainty_m": 1.16,
+  "records_spanning_more_than_one_cell_pct": 10.1
+ },
+ "software": {
+  "healpix-connector": "0.0.1"
+ },
+ "runtime_s": 406
+}

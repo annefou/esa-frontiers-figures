@@ -1,0 +1,14 @@
+{
+  "method": "Cross Scattering Transform (FOSCAT)",
+  "original_paper_doi": "10.1051/0004-6361/202244566",
+  "l3s_dataset": "cmems_obs-sst_glo_phy_l3s_pmw_P1D-m",
+  "l4_dataset": "cmems_obs-sst_glo_phy-temp_nrt_P1D-m",
+  "date": "2026-04-01",
+  "nside": 32,
+  "nsteps": 300,
+  "elapsed_s": 166.51938438415527,
+  "device": "cpu",
+  "harmonics_rmse": 11.463294908583702,
+  "foscat_rmse": 0.9854995431188764,
+  "improvement_pct": 91.40299930362137
+}

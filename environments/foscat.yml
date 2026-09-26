@@ -1,0 +1,17 @@
+# fig16 (SST gap filling). Mirrors annefou/fiesta-scattering-sst environment.yml (commit 21f8f95).
+name: esa-frontiers-foscat
+channels: [conda-forge, pytorch]
+dependencies:
+  - python=3.11
+  - numpy=2.2
+  - matplotlib=3.10
+  - scipy=1.15
+  - healpy=1.19
+  - xarray=2025.4
+  - netcdf4
+  - pytorch
+  - cpuonly
+  - pip
+  - pip:
+      - foscat @ git+https://github.com/annefou/FOSCAT.git@v0.1.0-cpu   # CPU-patched fork (upstream PR jmdelouis/FOSCAT#40)
+      - copernicusmarine==2.4.0

@@ -1,0 +1,221 @@
+{
+ "land_average_per_km2": 20.731143677532355,
+ "hotspots": [
+  {
+   "hotspot": "California Floristic Province",
+   "area_km2": 294456,
+   "records": 106346952,
+   "per_km2": 361.164700592788
+  },
+  {
+   "hotspot": "Forests of East Australia",
+   "area_km2": 254244,
+   "records": 51945665,
+   "per_km2": 204.31457371638703
+  },
+  {
+   "hotspot": "North American Coastal Plain",
+   "area_km2": 1239437,
+   "records": 198076735,
+   "per_km2": 159.8118150992275
+  },
+  {
+   "hotspot": "Cape Floristic Region",
+   "area_km2": 79127,
+   "records": 7245893,
+   "per_km2": 91.57315731955636
+  },
+  {
+   "hotspot": "Mesoamerica",
+   "area_km2": 1114261,
+   "records": 79492689,
+   "per_km2": 71.34115416223348
+  },
+  {
+   "hotspot": "Polynesia-Micronesia",
+   "area_km2": 44103,
+   "records": 3108543,
+   "per_km2": 70.48294939422904
+  },
+  {
+   "hotspot": "Mediterranean Basin",
+   "area_km2": 2091672,
+   "records": 122862438,
+   "per_km2": 58.73885985428708
+  },
+  {
+   "hotspot": "Western Ghats and Sri Lanka",
+   "area_km2": 190683,
+   "records": 10900024,
+   "per_km2": 57.163159673565005
+  },
+  {
+   "hotspot": "Maputaland-Pondoland-Albany",
+   "area_km2": 271107,
+   "records": 12743929,
+   "per_km2": 47.00706804442135
+  },
+  {
+   "hotspot": "New Zealand",
+   "area_km2": 268512,
+   "records": 11063120,
+   "per_km2": 41.20153387528602
+  },
+  {
+   "hotspot": "Southwest Australia",
+   "area_km2": 354125,
+   "records": 13901678,
+   "per_km2": 39.25641938397003
+  },
+  {
+   "hotspot": "New Caledonia",
+   "area_km2": 19457,
+   "records": 582620,
+   "per_km2": 29.943339654327545
+  },
+  {
+   "hotspot": "Tropical Andes",
+   "area_km2": 1533893,
+   "records": 43034610,
+   "per_km2": 28.0558111112176
+  },
+  {
+   "hotspot": "Caribbean Islands",
+   "area_km2": 225706,
+   "records": 5694554,
+   "per_km2": 25.229960706912166
+  },
+  {
+   "hotspot": "Madrean Pine-Oak Woodlands",
+   "area_km2": 473464,
+   "records": 11460039,
+   "per_km2": 24.204679585945033
+  },
+  {
+   "hotspot": "Tumbes-Choco-Magdalena",
+   "area_km2": 278241,
+   "records": 6537237,
+   "per_km2": 23.494869677417785
+  },
+  {
+   "hotspot": "Japan",
+   "area_km2": 370988,
+   "records": 7394393,
+   "per_km2": 19.931620179742257
+  },
+  {
+   "hotspot": "Chilean Winter Rainfall and Valdivian Forests",
+   "area_km2": 391094,
+   "records": 7388785,
+   "per_km2": 18.892603926900165
+  },
+  {
+   "hotspot": "Atlantic Forest",
+   "area_km2": 1227114,
+   "records": 18520188,
+   "per_km2": 15.092471393148411
+  },
+  {
+   "hotspot": "Himalaya",
+   "area_km2": 743922,
+   "records": 9136782,
+   "per_km2": 12.281911043880552
+  },
+  {
+   "hotspot": "Succulent Karoo",
+   "area_km2": 101179,
+   "records": 818566,
+   "per_km2": 8.090310800113901
+  },
+  {
+   "hotspot": "Philippines",
+   "area_km2": 296401,
+   "records": 1887841,
+   "per_km2": 6.369206303536875
+  },
+  {
+   "hotspot": "Indo-Burma",
+   "area_km2": 2366022,
+   "records": 14895581,
+   "per_km2": 6.295623101130227
+  },
+  {
+   "hotspot": "Madagascar and the Indian Ocean Islands",
+   "area_km2": 600586,
+   "records": 3458351,
+   "per_km2": 5.758298643779054
+  },
+  {
+   "hotspot": "Eastern Afromontane",
+   "area_km2": 1011786,
+   "records": 5458936,
+   "per_km2": 5.3953485580796885
+  },
+  {
+   "hotspot": "Sundaland",
+   "area_km2": 1486547,
+   "records": 7390590,
+   "per_km2": 4.971650597110358
+  },
+  {
+   "hotspot": "Guinean Forests of West Africa",
+   "area_km2": 622637,
+   "records": 2660498,
+   "per_km2": 4.2729499536393325
+  },
+  {
+   "hotspot": "Caucasus",
+   "area_km2": 536376,
+   "records": 2172242,
+   "per_km2": 4.049848708110042
+  },
+  {
+   "hotspot": "Coastal Forests of Eastern Africa",
+   "area_km2": 284078,
+   "records": 1142306,
+   "per_km2": 4.021096077000338
+  },
+  {
+   "hotspot": "Mountains of Southwest China",
+   "area_km2": 264621,
+   "records": 865206,
+   "per_km2": 3.26960630288763
+  },
+  {
+   "hotspot": "Cerrado",
+   "area_km2": 2027463,
+   "records": 6411030,
+   "per_km2": 3.1620951782388578
+  },
+  {
+   "hotspot": "East Melanesian Islands",
+   "area_km2": 101179,
+   "records": 247066,
+   "per_km2": 2.4418809578469434
+  },
+  {
+   "hotspot": "Wallacea",
+   "area_km2": 339856,
+   "records": 789619,
+   "per_km2": 2.3233915492405646
+  },
+  {
+   "hotspot": "Irano-Anatolian",
+   "area_km2": 899581,
+   "records": 1476845,
+   "per_km2": 1.6417028737449273
+  },
+  {
+   "hotspot": "Mountains of Central Asia",
+   "area_km2": 864558,
+   "records": 768502,
+   "per_km2": 0.8888960066527489
+  },
+  {
+   "hotspot": "Horn of Africa",
+   "area_km2": 1659718,
+   "records": 1053396,
+   "per_km2": 0.6346838996747244
+  }
+ ]
+}
