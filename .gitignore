@@ -18,3 +18,5 @@ fig09-coastal-storm-product-choice/data/
 */upstream/
 __pycache__/
 .pixi/
+beni-pipeline/results/fire_action_points.npz
+radar-birds-two-communities/data/

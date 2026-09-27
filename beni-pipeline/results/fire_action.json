@@ -1,0 +1,334 @@
+{
+ "records": 3099,
+ "heavy_cells": 3078,
+ "cells": 10781,
+ "blurred_records": 330,
+ "precise_le_3km_records": 97,
+ "no_uncertainty_records": 2662,
+ "records_in_heavily_burned_cells": 469,
+ "precise_records_in_heavily_burned_cells": 22,
+ "blurred_records_whose_point_is_in_burned_cell": 72,
+ "threatened_species_total": 105,
+ "threatened_species_with_records_in_burned_cells": 44,
+ "by_category_in_burned": {
+  "CR": 3,
+  "EN": 12,
+  "VU": 29
+ },
+ "species_in_burned": [
+  {
+   "species": "Ara glaucogularis",
+   "iucn": "CR",
+   "records_in_burned": 28,
+   "records": 98,
+   "blurred": 69
+  },
+  {
+   "species": "Plecturocebus olallae",
+   "iucn": "CR",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 1
+  },
+  {
+   "species": "Cedrela odorata",
+   "iucn": "CR",
+   "records_in_burned": 1,
+   "records": 9,
+   "blurred": 0
+  },
+  {
+   "species": "Solanum moxosense",
+   "iucn": "EN",
+   "records_in_burned": 7,
+   "records": 46,
+   "blurred": 0
+  },
+  {
+   "species": "Andropogon leucostachyus",
+   "iucn": "EN",
+   "records_in_burned": 6,
+   "records": 8,
+   "blurred": 0
+  },
+  {
+   "species": "Hydrodynastes gigas",
+   "iucn": "EN",
+   "records_in_burned": 2,
+   "records": 11,
+   "blurred": 0
+  },
+  {
+   "species": "Handroanthus serratifolius",
+   "iucn": "EN",
+   "records_in_burned": 2,
+   "records": 12,
+   "blurred": 0
+  },
+  {
+   "species": "Crax globulosa",
+   "iucn": "EN",
+   "records_in_burned": 2,
+   "records": 13,
+   "blurred": 0
+  },
+  {
+   "species": "Casimirella beckii",
+   "iucn": "EN",
+   "records_in_burned": 2,
+   "records": 5,
+   "blurred": 0
+  },
+  {
+   "species": "Piper obliquum",
+   "iucn": "EN",
+   "records_in_burned": 2,
+   "records": 2,
+   "blurred": 0
+  },
+  {
+   "species": "Swietenia macrophylla",
+   "iucn": "EN",
+   "records_in_burned": 1,
+   "records": 9,
+   "blurred": 2
+  },
+  {
+   "species": "Vanilla pompona",
+   "iucn": "EN",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 1
+  },
+  {
+   "species": "Sporophila maximiliani",
+   "iucn": "EN",
+   "records_in_burned": 1,
+   "records": 15,
+   "blurred": 6
+  },
+  {
+   "species": "Ficus caballina",
+   "iucn": "EN",
+   "records_in_burned": 1,
+   "records": 5,
+   "blurred": 0
+  },
+  {
+   "species": "Boelckea beckii",
+   "iucn": "EN",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 0
+  },
+  {
+   "species": "Tringa flavipes",
+   "iucn": "VU",
+   "records_in_burned": 99,
+   "records": 497,
+   "blurred": 2
+  },
+  {
+   "species": "Calidris fuscicollis",
+   "iucn": "VU",
+   "records_in_burned": 92,
+   "records": 340,
+   "blurred": 0
+  },
+  {
+   "species": "Coryphaspiza melanotis",
+   "iucn": "VU",
+   "records_in_burned": 41,
+   "records": 282,
+   "blurred": 7
+  },
+  {
+   "species": "Alectrurus tricolor",
+   "iucn": "VU",
+   "records_in_burned": 39,
+   "records": 260,
+   "blurred": 13
+  },
+  {
+   "species": "Calidris subruficollis",
+   "iucn": "VU",
+   "records_in_burned": 36,
+   "records": 812,
+   "blurred": 1
+  },
+  {
+   "species": "Podocnemis unifilis",
+   "iucn": "VU",
+   "records_in_burned": 17,
+   "records": 128,
+   "blurred": 120
+  },
+  {
+   "species": "Myrmecophaga tridactyla",
+   "iucn": "VU",
+   "records_in_burned": 13,
+   "records": 23,
+   "blurred": 22
+  },
+  {
+   "species": "Crax fasciolata",
+   "iucn": "VU",
+   "records_in_burned": 10,
+   "records": 44,
+   "blurred": 2
+  },
+  {
+   "species": "Bellucia beckii",
+   "iucn": "VU",
+   "records_in_burned": 9,
+   "records": 9,
+   "blurred": 0
+  },
+  {
+   "species": "Chelonoidis denticulatus",
+   "iucn": "VU",
+   "records_in_burned": 6,
+   "records": 24,
+   "blurred": 24
+  },
+  {
+   "species": "Blastocerus dichotomus",
+   "iucn": "VU",
+   "records_in_burned": 6,
+   "records": 21,
+   "blurred": 21
+  },
+  {
+   "species": "Limosa haemastica",
+   "iucn": "VU",
+   "records_in_burned": 6,
+   "records": 67,
+   "blurred": 0
+  },
+  {
+   "species": "Solanum arachnidanthum",
+   "iucn": "VU",
+   "records_in_burned": 6,
+   "records": 18,
+   "blurred": 0
+  },
+  {
+   "species": "Pionites leucogaster",
+   "iucn": "VU",
+   "records_in_burned": 5,
+   "records": 15,
+   "blurred": 1
+  },
+  {
+   "species": "Harpia harpyja",
+   "iucn": "VU",
+   "records_in_burned": 4,
+   "records": 12,
+   "blurred": 4
+  },
+  {
+   "species": "Tinamus tao",
+   "iucn": "VU",
+   "records_in_burned": 4,
+   "records": 29,
+   "blurred": 0
+  },
+  {
+   "species": "Kinosternon scorpioides",
+   "iucn": "VU",
+   "records_in_burned": 3,
+   "records": 5,
+   "blurred": 1
+  },
+  {
+   "species": "Dipteryx alata",
+   "iucn": "VU",
+   "records_in_burned": 3,
+   "records": 3,
+   "blurred": 0
+  },
+  {
+   "species": "Adonidia merrillii",
+   "iucn": "VU",
+   "records_in_burned": 2,
+   "records": 8,
+   "blurred": 0
+  },
+  {
+   "species": "Myrciaria floribunda",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 4,
+   "blurred": 0
+  },
+  {
+   "species": "Pouteria nemorosa",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 12,
+   "blurred": 0
+  },
+  {
+   "species": "Cedrela fissilis",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 4,
+   "blurred": 0
+  },
+  {
+   "species": "Annona scandens",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 0
+  },
+  {
+   "species": "Cybianthus buchtienii",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 0
+  },
+  {
+   "species": "Mickelia nicotianifolia",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 3,
+   "blurred": 0
+  },
+  {
+   "species": "Ficus pulchella",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 0
+  },
+  {
+   "species": "Manihot condensata",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 5,
+   "blurred": 0
+  },
+  {
+   "species": "Nectandra dasystyla",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 0
+  },
+  {
+   "species": "Jacaranda mimosifolia",
+   "iucn": "VU",
+   "records_in_burned": 1,
+   "records": 1,
+   "blurred": 0
+  }
+ ],
+ "blurred_records_radius_km_median": 30.981,
+ "blurred_share_of_disc_heavily_burned_median": 0.2053872053872054,
+ "blurred_share_of_disc_heavily_burned_range": [
+  0.016722408026755852,
+  0.7205882352941176
+ ]
+}

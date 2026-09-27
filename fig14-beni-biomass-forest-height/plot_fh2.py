@@ -7,6 +7,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.collections import PolyCollection
+from matplotlib.colors import LinearSegmentedColormap
 
 HERE = Path(__file__).parent.parent / "beni-pipeline"  # derived per-cell results live there
 FIG = Path(__file__).parent / "figure"
@@ -23,9 +24,11 @@ fig, axes = plt.subplots(1, 2, figsize=(16, 7.2), gridspec_kw={"width_ratios": [
 
 ax = axes[0]
 polys = [np.column_stack([lo, la]) for lo, la in zip(f["vlon"], f["vlat"])]
-pc = PolyCollection(polys, array=f["fh"], cmap="YlGn", edgecolor="none", clim=(0, 30))
+# colour-blind safe: light-to-mid greens for height, records as black dots with white edge (contrast by lightness, not hue)
+forest = LinearSegmentedColormap.from_list("forest", plt.get_cmap("YlGn")(np.linspace(0.05, 0.7, 256)))
+pc = PolyCollection(polys, array=f["fh"], cmap=forest, edgecolor="none", clim=(0, 30))
 ax.add_collection(pc)
-ax.scatter(f["mlon"], f["mlat"], s=5, c="#D2461E", alpha=0.7, linewidths=0, label="GBIF mammal records")
+ax.scatter(f["mlon"], f["mlat"], s=9, c="#111111", edgecolors="#FFFFFF", linewidths=0.4, label="GBIF mammal records")
 fig.colorbar(pc, ax=ax, fraction=0.046, pad=0.02, label="BIOMASS forest height (m)")
 ax.set_xlim(-67.5, -64.5); ax.set_ylim(-15.5, -12.5); ax.set_aspect(1 / np.cos(np.radians(-14)))
 ax.set_xlabel("Longitude"); ax.set_ylabel("Latitude")
@@ -36,7 +39,7 @@ for x, y in [(-66.02, -12.95), (-66.47, -15.05)]:
 ax.set_title("BIOMASS L2A forest height, Apr–Aug 2026\nGBIF mammals · HEALPix WGS84 (~1.6 km)", fontsize=15)
 
 ax = axes[1]
-for key, label, col in [("counts", "all taxa", "#004F8F"), ("mammal_counts", "mammals", "#D2461E")]:
+for key, label, col in [("counts", "all taxa", "#0072B2"), ("mammal_counts", "mammals", "#111111")]:
     v = np.sort(c[key][well])[::-1].astype(float)
     x = np.arange(1, v.size + 1) / v.size * 100
     y = np.cumsum(v) / v.sum() * 100

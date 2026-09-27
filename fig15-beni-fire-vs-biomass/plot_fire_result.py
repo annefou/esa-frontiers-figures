@@ -25,8 +25,8 @@ ok = np.isfinite(burned)
 pc = PolyCollection([p for p, k in zip(polys, ok) if k], array=100 * burned[ok], cmap="YlOrRd", clim=(0, 100), edgecolor="none")
 ax.add_collection(pc)
 forest = m & (agb >= 100)
-ax.add_collection(PolyCollection([p for p, k in zip(polys, forest) if k], facecolor="#006B3A", alpha=0.45, edgecolor="none"))
-ax.fill_between([], [], color="#006B3A", alpha=0.45, label="dense forest before the fires\n(≥100 Mg/ha, CCI 2023)")
+ax.add_collection(PolyCollection([p for p, k in zip(polys, forest) if k], facecolor="none", hatch="////", edgecolor="#1B3A5C", linewidth=0))
+ax.fill_between([], [], facecolor="none", hatch="////", edgecolor="#1B3A5C", label="dense forest before the fires\n(≥100 Mg/ha, CCI 2023)")
 fig.colorbar(pc, ax=ax, fraction=0.046, pad=0.02, label="area burned in 2024 (%)")
 ax.set_xlim(-67.5, -64.5); ax.set_ylim(-15.5, -12.5); ax.set_aspect(1 / np.cos(np.radians(-14)))
 ax.legend(loc="lower right", fontsize=12, frameon=True)
@@ -36,8 +36,8 @@ ax = axes[1]
 edges = [0, 10, 25, 50, 100, 150, 400]
 labels = ["<10", "10–25", "25–50", "50–100", "100–150", "≥150"]
 rt = np.nanpercentile(rain[m], [33.3, 66.7])
-groups = [("drier third", rain < rt[0], "#F1592C"), ("middle", (rain >= rt[0]) & (rain < rt[1]), "#F79548"),
-          ("wetter third", rain >= rt[1], "#00B0AD")]
+groups = [("drier third", rain < rt[0], "#E69F00"), ("middle", (rain >= rt[0]) & (rain < rt[1]), "#999999"),
+          ("wetter third", rain >= rt[1], "#0072B2")]
 x = np.arange(len(labels)); wdt = 0.27
 for gi, (name, gk, col) in enumerate(groups):
     vals = []

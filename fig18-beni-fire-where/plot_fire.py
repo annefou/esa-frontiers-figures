@@ -40,9 +40,9 @@ ax.set_title(f"ESA Fire CCI (Sentinel-3), 2024: {fs['burned_share_of_observed_bu
 ax = axes[1]
 heavy = f["burned_frac9"] > 0.25
 before = c["counts"] > 0
-cats = [("records since\nOct 2024", int((heavy & (post > 0)).sum()), "#008F4C"),
-        ("records before,\nnone since", int((heavy & (post == 0) & before).sum()), "#F79548"),
-        ("never any\nrecord", int((heavy & (post == 0) & ~before).sum()), "#F1592C")]
+cats = [("records since\nOct 2024", int((heavy & (post > 0)).sum()), "#0072B2"),
+        ("records before,\nnone since", int((heavy & (post == 0) & before).sum()), "#BDBDBD"),
+        ("never any\nrecord", int((heavy & (post == 0) & ~before).sum()), "#4D4D4D")]
 ax.bar([k for k, _, _ in cats], [v for _, v, _ in cats], color=[col for _, _, col in cats])
 for i, (_, v, _) in enumerate(cats):
     ax.text(i, v + 2, str(v), ha="center", fontsize=16, fontweight="bold")
