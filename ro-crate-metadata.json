@@ -116,7 +116,9 @@
         {
           "@id": "https://doi.org/10.5281/zenodo.20465505"
         }
-      ]
+      ],
+      "identifier": "https://doi.org/10.5281/zenodo.23002390",
+      "version": "0.1.0"
     },
     {
       "@id": "https://orcid.org/0000-0002-1784-2920",

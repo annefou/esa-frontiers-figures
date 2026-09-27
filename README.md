@@ -1,9 +1,13 @@
 # esa-frontiers-figures
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23002390.svg)](https://doi.org/10.5281/zenodo.23002390)
+
 Code and data behind every figure in **"Rethinking Interoperability for AI-Driven Earth Intelligence —
 What AI-ready means for biodiversity from space"** (Anne Fouilloux, LifeWatch ERIC; ESA Frontiers of Science,
 30 September 2026). Organised as a reproducibility package: one folder per slide figure,
 each with scripts, a README, and either the small derived data or a script that fetches the source data.
+
+Cite as: Fouilloux, A. (2026). *esa-frontiers-figures* (v0.1.0). Zenodo. [doi:10.5281/zenodo.23002391](https://doi.org/10.5281/zenodo.23002391)
 
 Code: MIT. Data: see [DATA_LICENSES.md](DATA_LICENSES.md). Credentials are never stored here (MAAP and
 Copernicus Marine accounts are read from environment variables / their own login files).

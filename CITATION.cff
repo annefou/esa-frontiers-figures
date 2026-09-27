@@ -8,6 +8,15 @@ authors:
     orcid: "https://orcid.org/0000-0002-1784-2920"
     affiliation: "LifeWatch ERIC"
 license: MIT
+doi: "10.5281/zenodo.23002390"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23002390"
+    description: "Concept DOI (resolves to the latest version)"
+  - type: doi
+    value: "10.5281/zenodo.23002391"
+    description: "Version DOI for v0.1.0"
+repository-code: "https://github.com/annefou/esa-frontiers-figures"
 version: "0.1.0"
 date-released: "2026-09-27"
 keywords: [reproducibility, HEALPix, DGGS, GBIF, ESA, BIOMASS, CCI, biodiversity, AI-ready]
