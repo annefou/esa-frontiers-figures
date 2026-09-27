@@ -1,4 +1,4 @@
-# fig16 (SST gap filling). Mirrors annefou/fiesta-scattering-sst environment.yml (commit 21f8f95).
+# SST gap filling (slide 33, backup). Mirrors annefou/fiesta-scattering-sst environment.yml (commit 21f8f95).
 name: esa-frontiers-foscat
 channels: [conda-forge, pytorch]
 dependencies:

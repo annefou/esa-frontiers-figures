@@ -1,4 +1,4 @@
-"""Slide-15 figure: a result from co-located layers — 2024 burning vs pre-fire biomass and rainfall."""
+"""Slide 29 (g2s, backup) figure: a result from co-located layers — 2024 burning vs pre-fire biomass and rainfall."""
 import json
 from pathlib import Path
 

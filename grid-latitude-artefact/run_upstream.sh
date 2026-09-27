@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Slide 8 figure comes from annefou/dggs-biodiversity-bias (MIT), doi:10.5281/zenodo.19848749.
+# Slide 27 (models-geometry, backup) figure comes from annefou/dggs-biodiversity-bias (MIT), doi:10.5281/zenodo.19848749.
 set -euo pipefail
 git clone https://github.com/annefou/dggs-biodiversity-bias upstream
 cd upstream && git checkout fc9ca6ec402e0598ab58226747f95b92739a4a58

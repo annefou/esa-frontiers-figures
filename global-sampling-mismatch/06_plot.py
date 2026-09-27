@@ -1,4 +1,4 @@
-"""Slide-3 figure v2: GBIF records per km2 on equal-area WGS84 HEALPix (depth 6, ~110 km), ocean greyed,
+"""Slide 4 (esa-questions) figure: GBIF records per km2 on equal-area WGS84 HEALPix (depth 6, ~110 km), ocean greyed,
 biodiversity hotspots outlined; right: record density per hotspot vs the land average."""
 import json
 

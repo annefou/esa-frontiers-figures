@@ -1,4 +1,4 @@
-"""Slide-14 figure: BIOMASS forest height + GBIF on WGS84 HEALPix; unevenness of the sample."""
+"""Slide 9 (biomass-fh) figure: BIOMASS forest height + GBIF on WGS84 HEALPix; unevenness of the sample."""
 import json
 from pathlib import Path
 

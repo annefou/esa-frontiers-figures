@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Slide 17 figure comes from annefou/sdm-hotspot-spatial-effort (MIT), doi:10.5281/zenodo.20465140
+# Slide 14 (checker-bio) figure comes from annefou/sdm-hotspot-spatial-effort (MIT), doi:10.5281/zenodo.20465140
 # (FORRT replication of Phillips et al. 2009, doi:10.1890/07-2153.1).
 set -euo pipefail
 git clone https://github.com/annefou/sdm-hotspot-spatial-effort upstream

@@ -1,4 +1,4 @@
-"""Slide-16 figure: SST cloud-gap filling with the scattering transform (FOSCAT) on HEALPix,
+"""Slide 33 (fill-gaps, backup) figure: SST cloud-gap filling with the scattering transform (FOSCAT) on HEALPix,
 from the FIESTA replication run (01_sst_gap_filling.py, maps saved to results/sst_maps.npz)."""
 import json
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Slide 33 (backup): replication of Oliver et al. 2018 Fig. 2 with ESA SST CCI Analysis v3.0,
+# Slide 40 (checker, backup): replication of Oliver et al. 2018 Fig. 2 with ESA SST CCI Analysis v3.0,
 # annefou/marine-heatwave-replication (MIT), doi:10.5281/zenodo.21950032.
 set -euo pipefail
 git clone https://github.com/annefou/marine-heatwave-replication upstream
