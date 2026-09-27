@@ -1,0 +1,274 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "esa-frontiers-figures: code and data behind the figures of 'Rethinking Interoperability for AI-Driven Earth Intelligence'",
+      "description": "Reproducibility package for the ESA Frontiers of Science talk (30 September 2026): one folder per slide figure with scripts, a README, and either small derived data or a script that fetches the source data. Beni lowlands analyses run on WGS84 HEALPix with healpix-connector. Record-level locations of threatened species are deliberately not included.",
+      "datePublished": "2026-09-27",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT"
+      },
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "publisher": {
+        "@id": "https://orcid.org/0000-0002-1784-2920"
+      },
+      "url": "https://github.com/annefou/esa-frontiers-figures",
+      "keywords": [
+        "reproducibility",
+        "HEALPix",
+        "DGGS",
+        "GBIF",
+        "ESA BIOMASS",
+        "ESA CCI",
+        "biodiversity",
+        "AI-ready"
+      ],
+      "hasPart": [
+        {
+          "@id": "global-sampling-mismatch/"
+        },
+        {
+          "@id": "sphere-vs-ellipsoid/"
+        },
+        {
+          "@id": "beni-biomass-forest-height/"
+        },
+        {
+          "@id": "coastal-storm-product-choice/"
+        },
+        {
+          "@id": "radar-birds-two-communities/"
+        },
+        {
+          "@id": "beni-fire-threatened-species/"
+        },
+        {
+          "@id": "sdm-sampling-bias/"
+        },
+        {
+          "@id": "grid-latitude-artefact/"
+        },
+        {
+          "@id": "beni-fire-vs-biomass/"
+        },
+        {
+          "@id": "sst-gap-filling/"
+        },
+        {
+          "@id": "beni-fire-where/"
+        },
+        {
+          "@id": "beni-genome-to-space/"
+        },
+        {
+          "@id": "beni-where-next/"
+        },
+        {
+          "@id": "marine-heatwaves-check/"
+        },
+        {
+          "@id": "beni-cci-biomass-gbif/"
+        },
+        {
+          "@id": "beni-pipeline/"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "DATA_LICENSES.md"
+        },
+        {
+          "@id": "CITATION.cff"
+        },
+        {
+          "@id": "LICENSE"
+        },
+        {
+          "@id": "environments/plot.yml"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22904851"
+        }
+      ],
+      "citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.23002073"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.20465505"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT",
+      "@type": "CreativeWork",
+      "name": "MIT License"
+    },
+    {
+      "@id": "global-sampling-mismatch/",
+      "@type": "Dataset",
+      "name": "Slide 4: GBIF records per km² on WGS84 HEALPix vs hotspots",
+      "description": "Code: this repo. Data here: GBIF bins + per-cell counts; hotspots/NE by script. Re-run check: from saved GBIF bins: all intermediates and PNG byte-identical (2026-09-26)"
+    },
+    {
+      "@id": "sphere-vs-ellipsoid/",
+      "@type": "Dataset",
+      "name": "Slide 7: Sphere vs WGS84 HEALPix: cells reassigned by latitude",
+      "description": "Code: extracted from GRID4EARTH website script. Data here: none needed. Re-run check: reproduced (100% max reassignment); PNG 1 px larger (matplotlib version)"
+    },
+    {
+      "@id": "beni-biomass-forest-height/",
+      "@type": "Dataset",
+      "name": "Slide 9: BIOMASS L2A forest height × GBIF, Beni",
+      "description": "Code: beni-pipeline steps 0b, 1, 2 + plot. Data here: per-cell results. Re-run check: plot byte-identical from saved results (2026-09-27)"
+    },
+    {
+      "@id": "coastal-storm-product-choice/",
+      "@type": "Dataset",
+      "name": "Slide 10: Storm Xaver: WAVERYS vs regional waves, Natura 2000 outcome",
+      "description": "Code: this repo (analysis upstream european-coastal-biodiversity-replication). Data here: Zenodo 20465505 by script. Re-run check: PNG byte-identical"
+    },
+    {
+      "@id": "radar-birds-two-communities/",
+      "@type": "Dataset",
+      "name": "Slide 12: Weather radar: rain vs birds in one scan (FMI Korpo)",
+      "description": "Code: this repo. Data here: FMI open data + aloft by script (CC BY 4.0). Re-run check: PNG byte-identical from a fresh download (2026-09-27)"
+    },
+    {
+      "@id": "beni-fire-threatened-species/",
+      "@type": "Dataset",
+      "name": "Slide 13: 2024 fires and threatened-species records, Beni",
+      "description": "Code: beni-pipeline steps 5, 8 + plot. Data here: aggregates only (record locations withheld). Re-run check: analysis and PNG byte-identical from the 2026-09-26 GBIF extract"
+    },
+    {
+      "@id": "sdm-sampling-bias/",
+      "@type": "Dataset",
+      "name": "Slide 14: SDM hotspot misidentification vs sampling effort",
+      "description": "Code: upstream annefou/sdm-hotspot-spatial-effort @37d682e. Data here: upstream downloads. Re-run check: not re-run here"
+    },
+    {
+      "@id": "grid-latitude-artefact/",
+      "@type": "Dataset",
+      "name": "Slide 27 (backup): Uniform points on a lat-lon grid: counts by latitude",
+      "description": "Code: upstream annefou/dggs-biodiversity-bias @fc9ca6e. Data here: synthetic (seed 42). Re-run check: numbers reproduced (22.9× area ratio, 605 vs 27 per cell); PNG differs by 2 px (matplotlib version)"
+    },
+    {
+      "@id": "beni-fire-vs-biomass/",
+      "@type": "Dataset",
+      "name": "Slide 29 (backup): Burned 2024 vs pre-fire biomass by rain tercile, Beni",
+      "description": "Code: beni-pipeline step 7 + plot. Data here: per-cell results. Re-run check: plot byte-identical; full replication in [annefou/beni-fire-biomass-healpix](https://github.com/annefou/beni-fire-biomass-healpix)"
+    },
+    {
+      "@id": "sst-gap-filling/",
+      "@type": "Dataset",
+      "name": "Slide 33 (backup): SST gap filling: satellite / smooth / scattering / L4",
+      "description": "Code: this repo (from annefou/fiesta-scattering-sst @21f8f95). Data here: HEALPix maps (sst_maps.npz). Re-run check: plot byte-identical; full run re-done 2026-09-26: RMSE 0.985 K (published 0.989 K)"
+    },
+    {
+      "@id": "beni-fire-where/",
+      "@type": "Dataset",
+      "name": "Slide 34 (backup): Fire CCI burned share and post-fire GBIF records, Beni",
+      "description": "Code: beni-pipeline steps 5, 6 + plot. Data here: per-cell results. Re-run check: plot byte-identical"
+    },
+    {
+      "@id": "beni-genome-to-space/",
+      "@type": "Dataset",
+      "name": "Slide 35 (backup): Genome-to-space layers, Beni",
+      "description": "Code: beni-pipeline step 3 + plot. Data here: per-cell results. Re-run check: plot byte-identical"
+    },
+    {
+      "@id": "beni-where-next/",
+      "@type": "Dataset",
+      "name": "Slide 36 (backup): Where next: dissimilarity to sampled cells",
+      "description": "Code: beni-pipeline step 4 + plot. Data here: per-cell results. Re-run check: plot byte-identical"
+    },
+    {
+      "@id": "marine-heatwaves-check/",
+      "@type": "Dataset",
+      "name": "Slide 40 (backup): Oliver et al. 2018 Fig. 2 and ESA SST CCI replication",
+      "description": "Code: upstream annefou/marine-heatwave-replication @665c325. Data here: original panel (CC BY 4.0). Re-run check: not re-run here (~8 core-hours)"
+    },
+    {
+      "@id": "beni-cci-biomass-gbif/",
+      "@type": "Dataset",
+      "name": "Slide 41 (backup): ESA CCI Biomass × GBIF, Beni",
+      "description": "Code: beni-pipeline step 1 + plot. Data here: per-cell results. Re-run check: plot byte-identical"
+    },
+    {
+      "@id": "beni-pipeline/",
+      "@type": "Dataset",
+      "name": "Beni lowlands pipeline on WGS84 HEALPix",
+      "description": "Scripts 00–08b: ESA BIOMASS L2A, ESA CCI Biomass, Fire_cci, CHELSA and GBIF onto the same HEALPix cells with healpix-connector; per-cell results shipped in results/."
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "Overview and figure table",
+      "encodingFormat": "text/markdown"
+    },
+    {
+      "@id": "DATA_LICENSES.md",
+      "@type": "File",
+      "name": "Data sources and licences",
+      "encodingFormat": "text/markdown"
+    },
+    {
+      "@id": "CITATION.cff",
+      "@type": "File",
+      "name": "Citation metadata",
+      "encodingFormat": "application/x-yaml"
+    },
+    {
+      "@id": "LICENSE",
+      "@type": "File",
+      "name": "MIT licence for the code",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@id": "environments/plot.yml",
+      "@type": "File",
+      "name": "Plotting environment",
+      "encodingFormat": "application/x-yaml"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22904851",
+      "@type": "CreativeWork",
+      "name": "healpix-connector v0.1.0"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.23002073",
+      "@type": "CreativeWork",
+      "name": "Beni fire and biomass replication of Staver et al. 2011"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.20465505",
+      "@type": "CreativeWork",
+      "name": "European coastal biodiversity replication: input data slices"
+    }
+  ]
+}
