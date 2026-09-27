@@ -8,6 +8,7 @@ What AI-ready means for biodiversity from space"** (Anne Fouilloux, LifeWatch ER
 each with scripts, a README, and either the small derived data or a script that fetches the source data.
 
 Cite as: Fouilloux, A. (2026). *esa-frontiers-figures* (v0.1.0). Zenodo. [doi:10.5281/zenodo.23002391](https://doi.org/10.5281/zenodo.23002391)
+Research object (ROHub): [w3id.org/ro-id/32448eb1-9361-4036-9e66-c7738c8f077f](https://w3id.org/ro-id/32448eb1-9361-4036-9e66-c7738c8f077f)
 
 Code: MIT. Data: see [DATA_LICENSES.md](DATA_LICENSES.md). Credentials are never stored here (MAAP and
 Copernicus Marine accounts are read from environment variables / their own login files).
