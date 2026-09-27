@@ -1,4 +1,4 @@
-"""Slide 12: how often the reference surface (sphere vs WGS84) changes a point's HEALPix cell, by latitude.
+"""Slide 7 (space-answer): how often the reference surface (sphere vs WGS84) changes a point's HEALPix cell, by latitude.
 
 Extracted verbatim from GRID4EARTH/grid4earth.github.io scripts/figures/make_dggs_figures.py
 (commit eb148fd, author Anne Fouilloux) so it runs standalone; writes figure/healpix-sphere-vs-ellipsoid.png.

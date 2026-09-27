@@ -7,4 +7,4 @@ WGS84 ellipsoid, by latitude (healpix-geo). Code extracted verbatim from GRID4EA
     python make_sphere_vs_ellipsoid.py   # -> figure/healpix-sphere-vs-ellipsoid.png (env: ../environments/plot.yml)
 
 Checked 2026-09-26: same curve (max 100% reassigned); PNG 1 px larger with a newer matplotlib.
-Open issue: the GRID4EARTH website repository declares no licence.
+The GRID4EARTH website repository declares no licence; this extract is by its author (A. Fouilloux) and released here under MIT.
