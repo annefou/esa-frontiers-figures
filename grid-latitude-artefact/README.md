@@ -1,4 +1,4 @@
-# Slide 8 — a lat-lon grid manufactures a latitude gradient
+# Slide 27 (backup) (`models-geometry`) — a lat-lon grid manufactures a latitude gradient
 
 One million uniform random points (seed 42) counted on a 5° lat-lon grid: up to ~23× more points per cell at the
 equator than at 85°N (cell-area ratio 22.9×). From `annefou/dggs-biodiversity-bias` (MIT, doi:10.5281/zenodo.19848749),

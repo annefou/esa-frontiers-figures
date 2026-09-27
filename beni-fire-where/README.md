@@ -1,6 +1,6 @@
-# Slide 34 — ESA CCI Biomass v7.0 (2023) and GBIF records on 12.7 km WGS84 HEALPix cells.
+# Slide 34 (backup) (`fire-where`) — Fire CCI 2024 burned share per cell and GBIF records since the fire.
 
-    python plot_beni.py     # env: ../environments/plot.yml -> figure/
+    python plot_fire.py     # env: ../environments/plot.yml -> figure/
 
 Reads the per-cell results in `../beni-pipeline/results/` (shipped). To regenerate those from source data see
 `../beni-pipeline/README.md`. Checked 2026-09-26: byte-identical to the deck image in `reference/`.

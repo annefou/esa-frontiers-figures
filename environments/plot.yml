@@ -1,4 +1,4 @@
-# Plotting + light analysis (fig03, fig09, fig12, all Beni plot_*.py). Versions = the env the figures were made in.
+# Plotting + light analysis (global-sampling, coastal-storm, sphere-vs-ellipsoid, radar, all Beni plot_*.py). Versions = the env the figures were made in.
 name: esa-frontiers-plot
 channels: [conda-forge]
 dependencies:
@@ -11,6 +11,7 @@ dependencies:
   - pyarrow
   - xarray=2026.7
   - netcdf4
+  - h5py=3.16
   - requests
   - pip
   - pip:

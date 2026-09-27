@@ -1,4 +1,4 @@
-# Weather radar: one scan, two communities (slide "radar-birds")
+# Slide 12 (`radar-birds`) — Weather radar: one scan, two communities
 
 FMI Korpo radar (fikor), night of 13–14 September 2023: the echo weather services remove as clutter is the bird
 migration ecologists keep.

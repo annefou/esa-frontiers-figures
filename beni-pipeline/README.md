@@ -14,11 +14,13 @@ Run in this order:
 | 5 | `beni_fire.py` | 1, Fire CCI (streamed from CEDA) | `results/fire_cells.npz`, `fire_summary.json` |
 | 6 | `beni_postfire_records.py` | 1, 5, GBIF API | `results/post_fire_counts.npy`, `postfire_summary.json` |
 | 7 | `beni_fire_result.py` | 0a, 5, CHELSA | `results/fire_result.npz|json` |
+| 8a | `08a_get_threatened_records.py` | GBIF API | `results/threatened_records.json` (not shipped) |
+| 8b | `08b_beni_fire_action.py` | 5, 8a | `results/fire_action.json`, `fire_action_points.npz` (not shipped) |
 
 `biomass_fh_items.json` lists the 18 BIOMASS products found by the MAAP catalogue query (2026-09-25); 16 used,
 2 excluded by the quality rule (see `results/fh_summary.json`).
 
 Shipped: per-cell results only. Not shipped: raw rasters (re-downloadable), `mammals.json` (record-level), and
-`threatened_records.json` (locations of threatened species — deliberately excluded). Note `fh_cells.npz` contains
+`threatened_records.json` and `fire_action_points.npz` (locations of threatened species — deliberately excluded). Note `fh_cells.npz` contains
 the coordinates of GBIF mammal records (`mlon`, `mlat`) for plotting, as published by GBIF.
 Re-running steps 1, 3, 6 against the live GBIF API will give slightly different counts.

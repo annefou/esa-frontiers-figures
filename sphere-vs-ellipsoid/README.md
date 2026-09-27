@@ -1,4 +1,4 @@
-# Slide 12 — sphere vs WGS84 HEALPix (GRID4EARTH)
+# Slide 7 (`space-answer`) — sphere vs WGS84 HEALPix (GRID4EARTH)
 
 Share of points that land in a different depth-10 (~6 km) HEALPix cell when the sphere is used instead of the
 WGS84 ellipsoid, by latitude (healpix-geo). Code extracted verbatim from GRID4EARTH/grid4earth.github.io

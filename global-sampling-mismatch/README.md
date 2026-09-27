@@ -1,4 +1,4 @@
-# Slide 3 — GBIF sampling effort vs biodiversity hotspots
+# Slide 4 (`esa-questions`) — GBIF sampling effort vs biodiversity hotspots
 
 All 3.6 billion GBIF occurrence records (Maps API density, retrieved 2026-09-26) summed into equal-area
 WGS84 HEALPix depth-6 cells (~110 km), land and ocean; terrestrial hotspots (Hoffman et al. 2016) hatched;

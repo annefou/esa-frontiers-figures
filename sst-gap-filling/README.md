@@ -1,4 +1,4 @@
-# Slide 16 — filling satellite SST gaps with the scattering transform (FOSCAT)
+# Slide 33 (backup) (`fill-gaps`) — filling satellite SST gaps with the scattering transform (FOSCAT)
 
 Copernicus Marine passive-microwave L3S SST (2026-04-01) on HEALPix nside 32; gaps (between orbits, low quality;
 ~28% of ocean cells) filled by a smooth spherical-harmonic fit vs the cross-scattering transform (FOSCAT),

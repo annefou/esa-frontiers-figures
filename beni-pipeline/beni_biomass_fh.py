@@ -32,9 +32,9 @@ SHIFT = np.uint64(2 * (FINE - COARSE))
 def clipped_bbox(path):
     """BBOX intersected with the file's bounds.
 
-    Works around healpix-connector read_window placing pixels wrongly when the
-    requested window extends beyond the file (it clips the data but derives the
-    coordinates from the unclipped window)."""
+    Each BIOMASS product covers only part of the Beni, so every window is requested
+    strictly inside its source raster; the converted cells were validated against
+    the source before use."""
     import rasterio
     with rasterio.open(path) as src:
         b = src.bounds

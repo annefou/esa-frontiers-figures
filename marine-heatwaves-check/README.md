@@ -1,4 +1,4 @@
-# Slide 33 (backup) — checking a published claim: marine heatwaves
+# Slide 40 (backup) (`checker`) — checking a published claim: marine heatwaves
 
 `reference/oliver2018_fig2_original.png`: Oliver et al. 2018, Nat Commun 9:1324, Fig. 2 (CC BY 4.0,
 doi:10.1038/s41467-018-03732-9). `reference/figure2_replica.png`: replication with ESA SST CCI Analysis v3.0 from

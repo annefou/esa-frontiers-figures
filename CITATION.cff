@@ -9,12 +9,25 @@ authors:
     affiliation: "LifeWatch ERIC"
 license: MIT
 version: "0.1.0"
-date-released: "2026-09-26"
-keywords: [reproducibility, FORRT, HEALPix, DGGS, GBIF, ESA, BIOMASS, CCI, biodiversity, AI-ready]
+date-released: "2026-09-27"
+keywords: [reproducibility, HEALPix, DGGS, GBIF, ESA, BIOMASS, CCI, biodiversity, AI-ready]
 references:
   - type: software
     title: "healpix-connector"
+    authors:
+      - family-names: "Fouilloux"
+        given-names: "Anne"
     repository-code: "https://github.com/annefou/healpix-connector"
-  - type: dataset
+    doi: "10.5281/zenodo.22904851"
+  - type: data
     title: "European coastal biodiversity replication: input data slices"
+    authors:
+      - family-names: "Fouilloux"
+        given-names: "Anne"
     doi: "10.5281/zenodo.20465505"
+  - type: software
+    title: "Fire and pre-fire biomass in the Beni savanna–forest mosaic: a replication of Staver, Archibald & Levin (2011) on WGS84 HEALPix"
+    authors:
+      - family-names: "Fouilloux"
+        given-names: "Anne"
+    doi: "10.5281/zenodo.23002073"

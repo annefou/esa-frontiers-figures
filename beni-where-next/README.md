@@ -1,4 +1,4 @@
-# Slide 29 — Dissimilarity of each cell to sampled cells (area-of-applicability style): where to measure next.
+# Slide 36 (backup) (`where-next`) — Dissimilarity of each cell to sampled cells (area-of-applicability style): where to measure next.
 
     python plot_where_next.py     # env: ../environments/plot.yml -> figure/
 
