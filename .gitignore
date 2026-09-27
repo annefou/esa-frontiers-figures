@@ -20,3 +20,5 @@ __pycache__/
 .pixi/
 beni-pipeline/results/fire_action_points.npz
 radar-birds-two-communities/data/
+_pages/
+_build/

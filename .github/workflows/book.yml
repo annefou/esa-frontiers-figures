@@ -1,0 +1,49 @@
+name: Build and deploy the figures book
+
+# One page per slide figure: README + figure + the scripts, included from the repository.
+# Nothing is re-run here (the pipelines need large downloads and credentials; see each README).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Generate pages
+        run: python book/make_pages.py
+      - name: Build MyST site
+        env:
+          BASE_URL: /${{ github.event.repository.name }}
+        run: npx -y mystmd@1 build --html
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _build/html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

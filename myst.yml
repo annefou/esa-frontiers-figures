@@ -1,0 +1,38 @@
+version: 1
+project:
+  title: "Figures of 'Rethinking Interoperability for AI-Driven Earth Intelligence'"
+  description: "Code and data behind every figure of the ESA Frontiers of Science talk (30 September 2026)."
+  authors:
+    - name: "Anne Fouilloux"
+      orcid: "0000-0002-1784-2920"
+      affiliations:
+        - "LifeWatch ERIC"
+  github: https://github.com/annefou/esa-frontiers-figures
+  doi: 10.5281/zenodo.23002390
+  license:
+    code: MIT
+  exclude:
+    - "*/README.md"
+    - README.md
+    - DATA_LICENSES.md
+  toc:
+    - file: _pages/index.md
+    - file: _pages/global-sampling-mismatch.md
+    - file: _pages/sphere-vs-ellipsoid.md
+    - file: _pages/beni-biomass-forest-height.md
+    - file: _pages/coastal-storm-product-choice.md
+    - file: _pages/radar-birds-two-communities.md
+    - file: _pages/beni-fire-threatened-species.md
+    - file: _pages/sdm-sampling-bias.md
+    - file: _pages/grid-latitude-artefact.md
+    - file: _pages/beni-fire-vs-biomass.md
+    - file: _pages/sst-gap-filling.md
+    - file: _pages/beni-fire-where.md
+    - file: _pages/beni-genome-to-space.md
+    - file: _pages/beni-where-next.md
+    - file: _pages/marine-heatwaves-check.md
+    - file: _pages/beni-cci-biomass-gbif.md
+    - file: _pages/beni-pipeline.md
+site:
+  title: "ESA Frontiers 2026 — figures"
+  template: book-theme
