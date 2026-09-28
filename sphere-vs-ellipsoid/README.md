@@ -19,4 +19,3 @@ shipped here. Colours checked for colour-vision deficiency (orange #D06A14 vs bl
 author (A. Fouilloux) and released here under MIT.
 
 Checked 2026-09-28: `reference/slide7_grid.png` is the deck image, reproduced byte-identically by `make_healpix_grid.py`.
-`reference/healpix-sphere-vs-ellipsoid.png` is the curve used in earlier versions of the deck.
