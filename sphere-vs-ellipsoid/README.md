@@ -1,10 +1,22 @@
-# Slide 7 (`space-answer`) — sphere vs WGS84 HEALPix (GRID4EARTH)
+# Slide 7 (`space-answer`) — the HEALPix grid on WGS84, and why the ellipsoid matters
 
-Share of points that land in a different depth-10 (~6 km) HEALPix cell when the sphere is used instead of the
-WGS84 ellipsoid, by latitude (healpix-geo). Code extracted verbatim from GRID4EARTH/grid4earth.github.io
-`scripts/figures/make_dggs_figures.py` (commit eb148fd).
+The slide figure `figure/slide7_grid.png` has two parts, both computed with healpix-geo:
 
-    python make_sphere_vs_ellipsoid.py   # -> figure/healpix-sphere-vs-ellipsoid.png (env: ../environments/plot.yml)
+- **Top — the grid itself:** three orthographic globes at depth 0, 2 and 4 (12, 192 and 3,072 cells). Every pixel is
+  assigned its WGS84 HEALPix cell, so the (curved) cell edges are exact. The base cell containing the Beni (Bolivia) is
+  shaded at every depth: the same area split into 16, then 256 cells whose IDs share its prefix.
+- **Bottom — sphere vs ellipsoid:** share of points that land in a different depth-10 (~6 km) cell when the sphere is
+  used instead of WGS84, by latitude: close to 100 % at mid-latitudes.
 
-Checked 2026-09-26: same curve (max 100% reassigned); PNG 1 px larger with a newer matplotlib.
-The GRID4EARTH website repository declares no licence; this extract is by its author (A. Fouilloux) and released here under MIT.
+    python make_healpix_grid.py          # -> figure/slide7_grid.png (+ figure/healpix_grid_globes.png, globes only)
+    python make_sphere_vs_ellipsoid.py   # -> figure/healpix-sphere-vs-ellipsoid.png (the curve on its own)
+
+Env: ../environments/plot.yml. Coastlines: `data/ne_110m_land.geojson`, Natural Earth 1:110m land (public domain),
+shipped here. Colours checked for colour-vision deficiency (orange #D06A14 vs blue, ΔE ≥ 22).
+
+`make_sphere_vs_ellipsoid.py` is extracted verbatim from GRID4EARTH/grid4earth.github.io
+`scripts/figures/make_dggs_figures.py` (commit eb148fd). That repository declares no licence; this extract is by its
+author (A. Fouilloux) and released here under MIT.
+
+Checked 2026-09-28: `reference/slide7_grid.png` is the deck image, reproduced byte-identically by `make_healpix_grid.py`.
+`reference/healpix-sphere-vs-ellipsoid.png` is the curve used in earlier versions of the deck.

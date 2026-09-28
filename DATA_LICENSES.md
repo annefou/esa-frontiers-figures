@@ -9,6 +9,7 @@ Code in this repository is MIT (see LICENSE). Data and figures carry the licence
 | GBIF occurrence search API via healpix-connector (Beni box) | slides 9, 13, 29, 34, 35, 36, 41 | as above; **no download DOI yet** | included: per-cell counts only. Record-level files (`mammals.json`, `threatened_records.json`, `fire_action_points.npz`) are **not** shipped — the last two hold locations of threatened species |
 | Biodiversity hotspots 2016.1, Hoffman et al. 2016, doi:10.5281/zenodo.3261807 | 4 | CC BY-SA 4.0 (derived `per_hotspot.json` is therefore CC BY-SA 4.0) | script |
 | Natural Earth 1:50m land | 4 | Public domain | script |
+| Natural Earth 1:110m land | 7 | Public domain | included (`sphere-vs-ellipsoid/data/`) |
 | ESA CCI Biomass v7.0 (2023 AGB, AGB_SD), doi:10.5285/6429d1aafe1e43b9b414e4a5a7f8b903 | 29, 41 | ESA CCI terms: any use; acknowledge ESA CCI and Biomass_cci; cite DOI | script; per-cell means included |
 | ESA Fire CCI SYN burned area v1.1 (2024), doi:10.5285/d441079fc77f49fabeb41330612b252f | 13, 29, 34 | ESA CCI terms (as above, Fire_cci) | streamed by script; per-cell fractions included |
 | ESA BIOMASS L2A forest height FP_FH__L2A, ESA MAAP | 9, 35, 36 | ESA/NASA MAAP open data policy (free, open; attribution in metadata). Needs free MAAP registration | script (`00_get_biomass_fh.py`, credentials from env only); per-cell means included |

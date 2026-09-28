@@ -42,11 +42,15 @@ def fence_indented(md: str) -> str:
 
 
 def figure_of(folder: Path):
-    for sub in ("figure", "reference"):
-        pngs = sorted((folder / sub).glob("*.png"))
-        if pngs:
-            return pngs[0]
-    return None
+    """The deck image: a figure/ PNG that also has a reference/ copy, else the first PNG found."""
+    refs = {p.name for p in (folder / "reference").glob("*.png")}
+    figs = sorted((folder / "figure").glob("*.png"))
+    for f in figs:
+        if f.name in refs:
+            return f
+    if figs:
+        return figs[0]
+    return sorted((folder / "reference").glob("*.png"))[0] if refs else None
 
 
 def code_blocks(folder: Path, rel: str) -> str:
