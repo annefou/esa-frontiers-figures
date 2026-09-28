@@ -1,0 +1,19 @@
+{
+ "n_cells": 427,
+ "zoom": {
+  "records": 710,
+  "example_uncertainty_km": 2.94,
+  "example_footprint_cells_depth12": 20,
+  "cells_in_view": 390
+ },
+ "counts": {
+  "records": 248065,
+  "top5pct_share": 79.1,
+  "empty_cells_pct": 20.8
+ },
+ "mammal_counts": {
+  "records": 6271,
+  "top5pct_share": 93.8,
+  "empty_cells_pct": 67.4
+ }
+}

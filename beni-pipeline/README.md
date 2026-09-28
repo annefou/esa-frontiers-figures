@@ -9,6 +9,7 @@ Run in this order:
 | 0b | `00_get_biomass_fh.py` | MAAP_OFFLINE_TOKEN (or MAAP_TOKEN_FILE) + MAAP_CLIENT_SECRET in env | `biomass_fh/*.tiff` (BIOMASS L2A FP_FH) |
 | 1 | `beni_biomass_gbif.py` | 0a, GBIF API | `results/cells.npz`, `summary.json`, `mammals.json` (not shipped) |
 | 2 | `beni_biomass_fh.py` | 0b, 1 | `results/fh_cells.npz`, `fh_summary.json` (quality rule: drop product if median quality < 1.0) |
+| 2b | `02b_zoom_records.py` | 1 | `results/fh_zoom_records.npz` (slide 9 zoom: position + uncertainty only) |
 | 3 | `beni_genome_to_space.py` | 1, 2, GBIF API, CHELSA v2.1 | `results/g2s_cells.npz`, `g2s_summary.json` |
 | 4 | `beni_where_next.py` | 3 | `results/where_next.npz|json` |
 | 5 | `beni_fire.py` | 1, Fire CCI (streamed from CEDA) | `results/fire_cells.npz`, `fire_summary.json` |

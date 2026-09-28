@@ -17,7 +17,7 @@ Copernicus Marine accounts are read from environment variables / their own login
 |---|---|---|---|---|---|
 | 4 | GBIF records per km² on WGS84 HEALPix vs hotspots | `global-sampling-mismatch` | this repo | GBIF bins + per-cell counts; hotspots/NE by script | from saved GBIF bins: all intermediates and PNG **byte-identical** (2026-09-26) |
 | 7 | The HEALPix grid on WGS84 (depth 0, 2, 4) and sphere vs WGS84 cell reassignment | `sphere-vs-ellipsoid` | this repo (healpix-geo) | Natural Earth 110m land (shipped) | PNG **byte-identical** (2026-09-28) |
-| **9** | **BIOMASS L2A forest height × GBIF, Beni** | `beni-biomass-forest-height` | `beni-pipeline` steps 0b, 1, 2 + plot | per-cell results | plot **byte-identical** from saved results (2026-09-27) |
+| **9** | **BIOMASS L2A forest height × GBIF, Beni, with a zoom on the HEALPix cells** | `beni-biomass-forest-height` | `beni-pipeline` steps 0b, 1, 2, 2b + plot | per-cell results; zoom-window record positions | plot **byte-identical** (2026-09-28) |
 | 10 | Storm Xaver: WAVERYS vs regional waves, Natura 2000 outcome | `coastal-storm-product-choice` | this repo (analysis upstream `european-coastal-biodiversity-replication`) | Zenodo 20465505 by script | PNG **byte-identical** |
 | 12 | Weather radar: rain vs birds in one scan (FMI Korpo) | `radar-birds-two-communities` | this repo | FMI open data + aloft by script (CC BY 4.0) | PNG **byte-identical** from a fresh download (2026-09-27) |
 | 13 | 2024 fires and threatened-species records, Beni | `beni-fire-threatened-species` | `beni-pipeline` steps 5, 8 + plot | aggregates only (record locations withheld) | analysis and PNG **byte-identical** from the 2026-09-26 GBIF extract |
