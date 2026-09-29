@@ -38,6 +38,8 @@
     "units": "Mg ha-1",
     "cell_methods": "area: mean",
     "comment": "No CF standard name exists for this quantity (CF standard name table v95, checked 2026-09-29). Only cells >90% covered.",
+    "definition": "Oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding stump and roots, per unit area (ESA CCI Biomass v7.0 dataset description, CEDA catalogue)",
+    "related_terms": "Related, not identical: http://purl.obolibrary.org/obo/AGRO_00000546 'aboveground biomass' (includes stump, seeds and foliage); http://vocab.nerc.ac.uk/collection/EXV/current/EXV049/ 'Above-ground biomass' (GCOS essential climate variable, no definition of its own). ENVO has 'biomass' only as a synonym of ENVO:01000155 'organic material' (a material, not a quantity per area).",
     "source": "ESA CCI Biomass v7.0 doi:10.5285/6429d1aafe1e43b9b414e4a5a7f8b903",
     "coordinates": "cell_ids",
     "_FillValue": "AAAAAAAA+H8="

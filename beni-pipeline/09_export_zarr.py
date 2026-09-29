@@ -37,6 +37,12 @@ DOI = {
     "aoa": "doi:10.1111/2041-210X.13650",
 }
 NO_STD = "No CF standard name exists for this quantity (CF standard name table v95, checked 2026-09-29)."
+AGB_DEFINITION = ("Oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding "
+                  "stump and roots, per unit area (ESA CCI Biomass v7.0 dataset description, CEDA catalogue)")
+AGB_RELATED = ("Related, not identical: http://purl.obolibrary.org/obo/AGRO_00000546 'aboveground biomass' "
+               "(includes stump, seeds and foliage); http://vocab.nerc.ac.uk/collection/EXV/current/EXV049/ "
+               "'Above-ground biomass' (GCOS essential climate variable, no definition of its own). "
+               "ENVO has 'biomass' only as a synonym of ENVO:01000155 'organic material' (a material, not a quantity per area).")
 
 
 def cell_coord(ids, level):
@@ -80,7 +86,9 @@ def d9():
         "agb": (c["agb_mean"], {
             "long_name": "Above-ground biomass, cell mean of ESA CCI Biomass v7.0 (2023, 100 m)",
             "units": "Mg ha-1", "cell_methods": "area: mean",
-            "comment": NO_STD + " Source variable 'agb' in ESA CCI Biomass v7.0 (netCDF, CF-1.7) carries only a long_name.",
+            "definition": AGB_DEFINITION, "related_terms": AGB_RELATED,
+            "comment": NO_STD + " Source variable 'agb' in ESA CCI Biomass v7.0 (netCDF, CF-1.7) carries only a long_name; "
+                       "the definition above is in the dataset description, not in the file.",
             "source": "ESA CCI Biomass v7.0 " + DOI["cci_biomass"], "ancillary_variables": "agb_sd agb_within_cell_std"}),
         "agb_sd": (c["agb_sd_mean"], {
             "long_name": "Above-ground biomass per-pixel standard deviation from ESA CCI Biomass v7.0, cell mean",
@@ -164,6 +172,7 @@ def d11():
         "agb": (fr["agb"], {
             "long_name": "Pre-fire above-ground biomass (ESA CCI Biomass v7.0, 2023), cell mean",
             "units": "Mg ha-1", "cell_methods": "area: mean", "comment": NO_STD + " Only cells >90% covered.",
+            "definition": AGB_DEFINITION, "related_terms": AGB_RELATED,
             "source": "ESA CCI Biomass v7.0 " + DOI["cci_biomass"]}),
         "precipitation_amount": (fr["rain"], {
             "standard_name": "precipitation_amount", "units": "kg m-2",
