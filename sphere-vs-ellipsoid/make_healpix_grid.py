@@ -8,7 +8,8 @@ Bottom: share of points that land in a different depth-10 cell on the sphere ins
 latitude (same computation as make_sphere_vs_ellipsoid.py).
 Coastlines: Natural Earth 110m land (public domain), fetched by download.sh.
 
-Writes figure/healpix_grid_globes.png (globes only) and figure/slide7_grid.png (the slide composite).
+Writes figure/healpix_grid_globes.png (globes only, book), figure/slide7_grid.png (globes + strip, deck up to v210)
+and figure/slide7_globes.png (globes only, the slide figure since deck v211).
 """
 import json
 from pathlib import Path
@@ -158,7 +159,22 @@ def slide_composite(g):
     plt.close(fig)
 
 
+def slide_globes(g):
+    """Slide 7 since deck v211: globes only, 980 x 390 px slot, rendered at 2x (the sphere-vs-WGS84 point is in the slide text)."""
+    plt.rcParams.update({"font.family": "DejaVu Sans"})
+    fig = plt.figure(figsize=(9.8, 3.9), dpi=200)
+    for i, d in enumerate((0, 2, 4)):
+        ax = fig.add_axes([0.015 + i * 0.33, 0.115, 0.31, 0.82])
+        g.draw(ax, d, title_size=15, marker=7, label=(i == 0))
+    fig.text(0.5, 0.025, "Every cell has the same area and splits into 4 at the next depth; the shaded base cell keeps one ID prefix",
+             ha="center", fontsize=11.5, color="#333F48")
+    fig.savefig(FIG / "slide7_globes.png", dpi=200, facecolor="white")
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     globes_only(Globes(1100))
-    slide_composite(Globes(900))
-    print("saved figure/healpix_grid_globes.png and figure/slide7_grid.png")
+    g = Globes(900)
+    slide_composite(g)
+    slide_globes(g)
+    print("saved figure/healpix_grid_globes.png, figure/slide7_grid.png and figure/slide7_globes.png")
