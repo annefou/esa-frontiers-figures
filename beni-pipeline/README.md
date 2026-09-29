@@ -17,11 +17,14 @@ Run in this order:
 | 7 | `beni_fire_result.py` | 0a, 5, CHELSA | `results/fire_result.npz|json` |
 | 8a | `08a_get_threatened_records.py` | GBIF API | `results/threatened_records.json` (not shipped) |
 | 8b | `08b_beni_fire_action.py` | 5, 8a | `results/fire_action.json`, `fire_action_points.npz` (not shipped) |
+| 9 | `09_export_zarr.py` | 1-5, 7 | `results/beni_healpix_d9.zarr`, `_d11.zarr`, `_d12.zarr`: the per-cell results with CF attributes and the HEALPix grid declared (xdggs convention); checked by `check_cf.py` (cfchecker, CF-1.8, standard names v95: 0 errors, 0 warnings) |
 
 `biomass_fh_items.json` lists the 18 BIOMASS products found by the MAAP catalogue query (2026-09-25); 16 used,
 2 excluded by the quality rule (see `results/fh_summary.json`).
 
-Shipped: per-cell results only. Not shipped: raw rasters (re-downloadable), `mammals.json` (record-level), and
+Shipped: per-cell results only. **Use the Zarr stores (step 9)**: they say what each variable is (CF standard name where
+one exists, units, source DOI, flag meanings) and which grid the cell IDs refer to. The `.npz` files are the
+intermediates passed between steps 1-8 (names only, no meaning); moving those steps to Zarr needs a full re-run. Not shipped: raw rasters (re-downloadable), `mammals.json` (record-level), and
 `threatened_records.json` and `fire_action_points.npz` (locations of threatened species — deliberately excluded). Note `fh_cells.npz` contains
 the coordinates of GBIF mammal records (`mlon`, `mlat`) for plotting, as published by GBIF.
 Re-running steps 1, 3, 6 against the live GBIF API will give slightly different counts.

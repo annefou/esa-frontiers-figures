@@ -1,0 +1,230 @@
+{
+  "attributes": {
+    "Conventions": "CF-1.8",
+    "title": "Beni lowlands (Bolivia) on WGS84 HEALPix depth 12: BIOMASS forest height",
+    "summary": "BIOMASS L2A forest height, 16 products from April-August 2026.",
+    "institution": "LifeWatch ERIC",
+    "creator_name": "Anne Fouilloux",
+    "project": "ESA Frontiers of Science 2026 talk; ESA GRID4EARTH",
+    "source": "esa-frontiers-figures/beni-pipeline (steps 1-8), exported by 09_export_zarr.py",
+    "history": "Source products binned into WGS84 HEALPix cells with healpix-connector v0.1.0 (area-weighted binning of pixel centres); exported to Zarr 2026-09-29.",
+    "geospatial_lon_min": -67.5,
+    "geospatial_lat_min": -15.5,
+    "geospatial_lon_max": -64.5,
+    "geospatial_lat_max": -12.5,
+    "dggs_name": "HEALPix",
+    "dggs_level": 12,
+    "dggs_cell_size_km": 1.59,
+    "license": "Derived data; each source keeps its own terms, see DATA_LICENSES.md in the repository",
+    "references": "https://github.com/annefou/esa-frontiers-figures"
+  },
+  "zarr_format": 3,
+  "consolidated_metadata": {
+    "kind": "inline",
+    "must_understand": false,
+    "metadata": {
+      "biomass_quality": {
+        "shape": [
+          29986
+        ],
+        "data_type": "float64",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              29986
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": "NaN",
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "long_name": "BIOMASS L2A quality layer value, cell mean",
+          "units": "1",
+          "comment": "No CF standard name exists for this quantity (CF standard name table v95, checked 2026-09-29). The meaning of the quality values is not declared in the product files; the pipeline drops products whose median quality is < 1.0 (see fh_summary.json).",
+          "coordinates": "cell_ids",
+          "_FillValue": "AAAAAAAA+H8="
+        },
+        "dimension_names": [
+          "cells"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "canopy_height": {
+        "shape": [
+          29986
+        ],
+        "data_type": "float64",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              29986
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": "NaN",
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "standard_name": "canopy_height",
+          "units": "m",
+          "cell_methods": "area: mean",
+          "long_name": "BIOMASS L2A forest height (FH), pixel-count-weighted mean over repeat acquisitions",
+          "comment": "Mapping by us: BIOMASS 'forest height' declared as CF canopy_height.",
+          "source": "ESA BIOMASS L2A FP_FH, BPS-Biomass L2a processor 4.4.4, 200 m, via ESA MAAP",
+          "ancillary_variables": "biomass_quality number_of_acquisitions",
+          "coordinates": "cell_ids",
+          "_FillValue": "AAAAAAAA+H8="
+        },
+        "dimension_names": [
+          "cells"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "cell_ids": {
+        "shape": [
+          29986
+        ],
+        "data_type": "uint64",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              29986
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": 0,
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "long_name": "HEALPix cell index",
+          "units": "1",
+          "grid_name": "healpix",
+          "level": 12,
+          "indexing_scheme": "nested",
+          "ellipsoid": "WGS84",
+          "comment": "Equal-area HEALPix on the WGS84 ellipsoid (healpix-geo, authalic mapping). Cell geometry is fully defined by (level, cell id); see xdggs."
+        },
+        "dimension_names": [
+          "cells"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      },
+      "number_of_acquisitions": {
+        "shape": [
+          29986
+        ],
+        "data_type": "int64",
+        "chunk_grid": {
+          "name": "regular",
+          "configuration": {
+            "chunk_shape": [
+              29986
+            ]
+          }
+        },
+        "chunk_key_encoding": {
+          "name": "default",
+          "configuration": {
+            "separator": "/"
+          }
+        },
+        "fill_value": 0,
+        "codecs": [
+          {
+            "name": "bytes",
+            "configuration": {
+              "endian": "little"
+            }
+          },
+          {
+            "name": "zstd",
+            "configuration": {
+              "level": 0,
+              "checksum": false
+            }
+          }
+        ],
+        "attributes": {
+          "standard_name": "number_of_observations",
+          "units": "1",
+          "long_name": "Number of BIOMASS acquisitions averaged in the cell",
+          "coordinates": "cell_ids"
+        },
+        "dimension_names": [
+          "cells"
+        ],
+        "zarr_format": 3,
+        "node_type": "array",
+        "storage_transformers": []
+      }
+    }
+  },
+  "node_type": "group"
+}

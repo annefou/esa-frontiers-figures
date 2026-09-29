@@ -1,0 +1,48 @@
+{
+  "shape": [
+    610
+  ],
+  "data_type": "int8",
+  "chunk_grid": {
+    "name": "regular",
+    "configuration": {
+      "chunk_shape": [
+        610
+      ]
+    }
+  },
+  "chunk_key_encoding": {
+    "name": "default",
+    "configuration": {
+      "separator": "/"
+    }
+  },
+  "fill_value": 0,
+  "codecs": [
+    {
+      "name": "bytes"
+    },
+    {
+      "name": "zstd",
+      "configuration": {
+        "level": 0,
+        "checksum": false
+      }
+    }
+  ],
+  "attributes": {
+    "long_name": "Cell used in the area-of-applicability analysis (canopy height observed on >= 80% and all predictors finite)",
+    "flag_values": [
+      0,
+      1
+    ],
+    "flag_meanings": "not_considered considered",
+    "coordinates": "cell_ids"
+  },
+  "dimension_names": [
+    "cells"
+  ],
+  "zarr_format": 3,
+  "node_type": "array",
+  "storage_transformers": []
+}
